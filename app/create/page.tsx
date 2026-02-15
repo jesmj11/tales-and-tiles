@@ -90,29 +90,29 @@ export default function CreatePostcard() {
   };
 
   return (
-    <main className="min-h-screen bg-gradient-to-br from-blue-50 to-purple-50 py-12">
+    <main className="min-h-screen bg-white py-12">
       <div className="container mx-auto px-4 max-w-4xl">
-        <h1 className="text-4xl font-bold text-center mb-8">Create Your Tale & Tile</h1>
+        <h1 className="text-4xl font-bold text-center mb-8" style={{ color: '#002D04' }}>Create Your Tale & Tile</h1>
 
         {/* Step Indicator */}
         <div className="flex justify-center mb-8">
           <div className="flex items-center space-x-4">
-            <div className={`flex items-center ${step >= 1 ? 'text-purple-600' : 'text-gray-400'}`}>
-              <div className={`w-10 h-10 rounded-full flex items-center justify-center font-semibold ${step >= 1 ? 'bg-purple-600 text-white' : 'bg-gray-300'}`}>
+            <div className={`flex items-center ${step >= 1 ? '' : 'text-gray-400'}`} style={step >= 1 ? { color: '#107BC0' } : {}}>
+              <div className={`w-10 h-10 rounded-full flex items-center justify-center font-semibold text-white ${step >= 1 ? '' : 'bg-gray-300'}`} style={step >= 1 ? { backgroundColor: '#107BC0' } : {}}>
                 1
               </div>
               <span className="ml-2 font-medium">Photo</span>
             </div>
             <div className="w-12 h-1 bg-gray-300"></div>
-            <div className={`flex items-center ${step >= 2 ? 'text-purple-600' : 'text-gray-400'}`}>
-              <div className={`w-10 h-10 rounded-full flex items-center justify-center font-semibold ${step >= 2 ? 'bg-purple-600 text-white' : 'bg-gray-300'}`}>
+            <div className={`flex items-center ${step >= 2 ? '' : 'text-gray-400'}`} style={step >= 2 ? { color: '#107BC0' } : {}}>
+              <div className={`w-10 h-10 rounded-full flex items-center justify-center font-semibold text-white ${step >= 2 ? '' : 'bg-gray-300'}`} style={step >= 2 ? { backgroundColor: '#107BC0' } : {}}>
                 2
               </div>
               <span className="ml-2 font-medium">Message</span>
             </div>
             <div className="w-12 h-1 bg-gray-300"></div>
-            <div className={`flex items-center ${step >= 3 ? 'text-purple-600' : 'text-gray-400'}`}>
-              <div className={`w-10 h-10 rounded-full flex items-center justify-center font-semibold ${step >= 3 ? 'bg-purple-600 text-white' : 'bg-gray-300'}`}>
+            <div className={`flex items-center ${step >= 3 ? '' : 'text-gray-400'}`} style={step >= 3 ? { color: '#107BC0' } : {}}>
+              <div className={`w-10 h-10 rounded-full flex items-center justify-center font-semibold text-white ${step >= 3 ? '' : 'bg-gray-300'}`} style={step >= 3 ? { backgroundColor: '#107BC0' } : {}}>
                 3
               </div>
               <span className="ml-2 font-medium">Address</span>
@@ -130,7 +130,7 @@ export default function CreatePostcard() {
                   <div>
                     <div className="text-6xl mb-4">📸</div>
                     <label className="cursor-pointer">
-                      <span className="bg-purple-600 hover:bg-purple-700 text-white px-6 py-3 rounded-lg inline-block">
+                      <span className="text-white px-6 py-3 rounded-lg inline-block hover:opacity-90 transition-opacity" style={{ backgroundColor: '#107BC0' }}>
                         Choose Photo
                       </span>
                       <input
@@ -163,7 +163,8 @@ export default function CreatePostcard() {
               {imagePreview && (
                 <button
                   onClick={() => setStep(2)}
-                  className="mt-6 w-full bg-purple-600 hover:bg-purple-700 text-white font-semibold py-3 rounded-lg"
+                  className="mt-6 w-full text-white font-semibold py-3 rounded-lg hover:opacity-90 transition-opacity"
+                  style={{ backgroundColor: '#00890B' }}
                 >
                   Next: Write Message →
                 </button>
@@ -193,7 +194,8 @@ export default function CreatePostcard() {
                 <button
                   onClick={() => setStep(3)}
                   disabled={!message}
-                  className="flex-1 bg-purple-600 hover:bg-purple-700 text-white font-semibold py-3 rounded-lg disabled:opacity-50"
+                  className="flex-1 text-white font-semibold py-3 rounded-lg disabled:opacity-50 hover:opacity-90 transition-opacity"
+                  style={{ backgroundColor: '#00890B' }}
                 >
                   Next: Add Address →
                 </button>
@@ -270,7 +272,8 @@ export default function CreatePostcard() {
                 <button
                   onClick={handleSubmit}
                   disabled={loading || !recipientName || !recipientAddress || !recipientCity || !recipientState || !recipientZip}
-                  className="flex-1 bg-green-600 hover:bg-green-700 text-white font-semibold py-3 rounded-lg disabled:opacity-50"
+                  className="flex-1 text-white font-semibold py-3 rounded-lg disabled:opacity-50 hover:opacity-90 transition-opacity"
+                  style={{ backgroundColor: '#00890B' }}
                 >
                   {loading ? 'Creating...' : '🚀 Create Postcard ($3.99)'}
                 </button>
