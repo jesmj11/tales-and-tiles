@@ -272,7 +272,7 @@ export default function CreatePostcard() {
                   disabled={loading || !recipientName || !recipientAddress || !recipientCity || !recipientState || !recipientZip}
                   className="flex-1 bg-green-600 hover:bg-green-700 text-white font-semibold py-3 rounded-lg disabled:opacity-50"
                 >
-                  {loading ? 'Creating...' : '🚀 Create Postcard ($7.99)'}
+                  {loading ? 'Creating...' : '🚀 Create Postcard ($5.99)'}
                 </button>
               </div>
             </div>

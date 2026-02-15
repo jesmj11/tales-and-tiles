@@ -8,7 +8,7 @@ export default function Home() {
           <h1 className="text-6xl font-bold text-gray-900 mb-6">
             📮 Tales & Tiles
           </h1>
-          <p className="text-2xl text-gray-600 mb-8">
+          <p className="text-2xl text-gray-800 font-medium mb-8">
             Your stories. Your photos. Real postcards, shipped fast.
           </p>
           
@@ -18,17 +18,17 @@ export default function Home() {
               <div>
                 <div className="text-5xl mb-4">📸</div>
                 <h3 className="text-xl font-semibold mb-2">1. Upload Photo</h3>
-                <p className="text-gray-600">Choose your favorite travel moment</p>
+                <p className="text-gray-700">Choose your favorite travel moment</p>
               </div>
               <div>
                 <div className="text-5xl mb-4">✍️</div>
                 <h3 className="text-xl font-semibold mb-2">2. Write Message</h3>
-                <p className="text-gray-600">Add your personal touch</p>
+                <p className="text-gray-700">Add your personal touch</p>
               </div>
               <div>
                 <div className="text-5xl mb-4">📬</div>
                 <h3 className="text-xl font-semibold mb-2">3. Ships Fast!</h3>
-                <p className="text-gray-600">Delivered in 3-5 days</p>
+                <p className="text-gray-700">Delivered in 3-5 days</p>
               </div>
             </div>
           </div>
@@ -40,8 +40,8 @@ export default function Home() {
             Create Your Postcard →
           </Link>
 
-          <div className="mt-12 text-gray-500">
-            <p className="text-lg">Only $7.99 per postcard • Ships in 3-5 days • Worldwide delivery</p>
+          <div className="mt-12 text-gray-700">
+            <p className="text-lg font-medium">Only $5.99 per postcard • Ships in 3-5 days • Worldwide delivery</p>
           </div>
         </div>
       </div>
