@@ -64,10 +64,11 @@ When ready to go live, swap `LOB_TEST_SECRET_KEY` for `LOB_LIVE_SECRET_KEY`.
 - 6x4 postcard: ~$1.50-2.00 per card (including postage)
 
 **Pricing strategy:**
-- Sell at: $5.99 per postcard
-- Profit: ~$4 per card
-- Stripe fees: ~$0.47
-- **Net profit: ~$3.50 per card** 🎉
+- Sell at: $3.99 per postcard
+- Lob cost: $0.87 (print + postage)
+- Stripe fees: ~$0.42 (2.9% + $0.30)
+- **Net profit: ~$2.70 per card** 🎉
+- Encourages multiple purchases!
 
 ## 🌏 Perfect for:
 

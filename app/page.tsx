@@ -41,7 +41,7 @@ export default function Home() {
           </Link>
 
           <div className="mt-12 text-gray-700">
-            <p className="text-lg font-medium">Only $5.99 per postcard • Ships in 3-5 days • Worldwide delivery</p>
+            <p className="text-lg font-medium">Only $3.99 per postcard • Ships in 3-5 days • Worldwide delivery</p>
           </div>
         </div>
       </div>
